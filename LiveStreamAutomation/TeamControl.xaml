@@ -1,0 +1,56 @@
+﻿<UserControl x:Class="LiveStreamAutomation.TeamControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LiveStreamAutomation"
+             mc:Ignorable="d" 
+             d:DesignHeight="51" d:DesignWidth="1280">
+    <Grid>
+        <Grid Background="White" Name="grdTop">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+                <ColumnDefinition Width="50"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="51"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Border Background="BlueViolet" Grid.Column="0" BorderThickness="0"></Border>
+            <Border Grid.Column="1" BorderBrush="{DynamicResource PrimaryColorBrush}" BorderThickness="2,1,1,1">
+                <Viewbox HorizontalAlignment="Left" Margin="5" >
+                    <TextBlock Name="txtPlayOrder" Grid.Column="0" Text=""></TextBlock>
+                </Viewbox>
+            </Border>
+            <Border Grid.Column="2" BorderBrush="{DynamicResource PrimaryColorBrush}" BorderThickness="1,1,1,1">
+                <Viewbox HorizontalAlignment="Left" Margin="5" >
+                    <TextBlock Name="txtTeamInfo" Grid.Column="1" Text=""></TextBlock>
+                </Viewbox>
+            </Border>
+            <Border Grid.Column="3" BorderBrush="{DynamicResource PrimaryColorBrush}" BorderThickness="1,1,1,1">
+                <Viewbox HorizontalAlignment="Left" Margin="5" >
+                    <TextBlock Name="txtExScore" Grid.Column="1" Text=""></TextBlock>
+                </Viewbox>
+            </Border>
+            <Border Grid.Column="4" BorderBrush="{DynamicResource PrimaryColorBrush}" BorderThickness="1,1,1,1">
+                <Viewbox HorizontalAlignment="Left" Margin="5" >
+                    <TextBlock Name="txtDiffScore" Grid.Column="1" Text=""></TextBlock>
+                </Viewbox>
+            </Border>
+            <Border Grid.Column="5" BorderBrush="{DynamicResource PrimaryColorBrush}" BorderThickness="1,1,1,1">
+                <Viewbox HorizontalAlignment="Left" Margin="5" >
+                    <TextBlock Name="txtAIScore" Grid.Column="1" Text=""></TextBlock>
+                </Viewbox>
+            </Border>
+            <Border Grid.Column="6" BorderBrush="{DynamicResource PrimaryColorBrush}" BorderThickness="1,1,2,1">
+                <Viewbox HorizontalAlignment="Left" Margin="5" >
+                    <TextBlock Name="txtTotalScore" Grid.Column="1" Text=""></TextBlock>
+                </Viewbox>
+            </Border>
+        </Grid>
+    </Grid>
+</UserControl>

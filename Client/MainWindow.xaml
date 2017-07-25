@@ -1,0 +1,57 @@
+﻿<Window x:Class="Client.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Client"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="500" Width="525">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0">
+            <TextBlock Text="Event" Margin="5,8,5,8"></TextBlock>
+            <TextBlock Text="Division" Margin="5,8,5,8"></TextBlock>
+            <TextBlock Text="Round" Margin="5,8,5,8"></TextBlock>
+            <TextBlock Text="Pool" Margin="5,8,5,8"></TextBlock>
+            <TextBlock Text="Team Number" Margin="5,8,5,8"></TextBlock>
+            <TextBlock Text="AI Score" Margin="5,8,5,8"></TextBlock>
+            <TextBlock Text="EX Score" Margin="5,8,5,8"></TextBlock>
+            <TextBlock Text="DIFF Score" Margin="5,8,5,8"></TextBlock>
+            <TextBlock Text="Player 1" Margin="5,8,5,8"></TextBlock>
+            <TextBlock Text="Player 2" Margin="5,8,5,8"></TextBlock>
+            <TextBlock Text="Player 3" Margin="5,8,5,8"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <TextBox Name="txtEvent" Margin="5"></TextBox>
+            <TextBox Name="txtDivision" Margin="5"></TextBox>
+            <TextBox Name="txtRound" Margin="5"></TextBox>
+            <TextBox Name="txtPool" Margin="5"></TextBox>
+            <TextBox Name="txtTeamNumber" Margin="5"></TextBox>
+            <TextBox Name="txtAIScore" Margin="5"></TextBox>
+            <TextBox Name="txtEXSore" Margin="5"></TextBox>
+            <TextBox Name="txtDIFFScore" Margin="5"></TextBox>
+            <TextBox Name="txtPlayer1" Margin="5"></TextBox>
+            <TextBox Name="txtPlayer2" Margin="5"></TextBox>
+            <TextBox Name="txtPlayer3" Margin="5"></TextBox>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button Name="btnReady" Content="Ready" Margin="5" Click="btnReady_Click"></Button>
+                <Button Name="btnStart" Content="Start" Margin="5" Click="btnStart_Click"></Button>
+                <Button Name="btnStop" Content="Finished" Margin="5" Click="btnStop_Click"></Button>
+                <Button Name="btnStopNow" Content="Stopped" Margin="5" Click="btnStopNow_Click"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button Name="btn3rd" Content="3rd" Margin="5" Click="btn3rd_Click"></Button>
+                <Button Name="btnNone" Content="None" Margin="5" Click="btnNone_Click"></Button>
+                <Button Name="btnOrdr" Content="Play Order" Margin="5" Click="btnOrdr_Click"></Button>
+                <Button Name="btnResults" Content="Results" Margin="5" Click="btnResults_Click"></Button>
+                <Button Name="btnPlayerDetail" Content="Detail" Margin="5" Click="btnPlayerDetail_Click"></Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <Button Name="btnTestData" Content="Team List Data" Margin="5" Click="btnTestData_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
